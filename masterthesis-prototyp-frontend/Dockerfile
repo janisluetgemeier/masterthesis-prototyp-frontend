@@ -1,0 +1,9 @@
+FROM node AS build
+WORKDIR /app
+COPY . .
+RUN npm run build
+RUN ls
+FROM nginx:1.15.5-alpine
+COPY --from=build /app/dist/ /var/www
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+CMD ["nginx", "-g", "daemon off;"]
