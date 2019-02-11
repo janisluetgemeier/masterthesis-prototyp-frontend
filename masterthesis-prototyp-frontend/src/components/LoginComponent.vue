@@ -1,13 +1,20 @@
 <template>
     <div id="login">
   <div v-if="status === 'start'" id="form">
-    <label for="uname"><b>E-Mail</b></label>
-    <input v-model="email" type="text" placeholder="Enter Username" name="uname" required> <br>
-
-    <label for="psw"><b>Password</b></label>
-    <input v-model="password" type="password" placeholder="Enter Password" name="psw" required><br>
-
-    <button type="submit" @click="login ()">Login</button>
+    <table align="center">
+    <tr>
+    <td><label for="uname"><b>E-Mail</b></label></td>
+    <td><input v-model="email" type="text" placeholder="Enter Username" name="uname" required></td>
+    </tr>
+    <tr>
+     <td><label for="psw"><b>Password</b></label></td>
+   <td> <input v-model="password" type="password" placeholder="Enter Password" name="psw" required></td>
+    </tr>
+    <tr>
+      <td></td>
+    <td><button type="submit" @click="login ()">Login</button></td>
+    </tr>
+    </table>
   </div>
     <div v-if="status === 'progessing'" id="progessing">
         Ihre Anfrage wird bearbeitet.
