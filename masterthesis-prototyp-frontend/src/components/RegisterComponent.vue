@@ -4,16 +4,16 @@
     <p> Hier können Sie sich registrieren</p> 
     <table align="center">   
     <tr>
-    <td><label for="uname"><b>Emailadresse</b></label></td>
-    <td><input v-model="email" type="text" placeholder="Enter Username" name="email" required> </td>
+    <td><label for="uname"><b>E-Mail</b></label></td>
+    <td><input v-model="email" type="text" placeholder="Bitte E-Mail Adresse eingeben" name="email" required> </td>
     </tr>
       <tr>
     <td><label for="uname"><b>Name</b></label></td>
-    <td><input v-model="name" type="text" placeholder="Enter Name" name="name" required></td>
+    <td><input v-model="name" type="text" placeholder="Bitte Namen eingeben" name="name" required></td>
       </tr>
       <tr>
    <td> <label for="psw"><b>Gewünschtes Passwort</b></label></td>
-   <td> <input v-model="password" type="password" placeholder="Enter Password" name="password" required></td>
+   <td> <input v-model="password" type="password" placeholder="Bitte Passwort eingeben" name="password" required></td>
       </tr>
 </table>
 

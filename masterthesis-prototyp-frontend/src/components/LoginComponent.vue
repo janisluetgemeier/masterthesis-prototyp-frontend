@@ -4,11 +4,11 @@
     <table align="center">
     <tr>
     <td><label for="uname"><b>E-Mail</b></label></td>
-    <td><input v-model="email" type="text" placeholder="Enter Username" name="uname" required></td>
+    <td><input v-model="email" type="text" placeholder="Bitte E-Mail eingeben" name="uname" required></td>
     </tr>
     <tr>
-     <td><label for="psw"><b>Password</b></label></td>
-   <td> <input v-model="password" type="password" placeholder="Enter Password" name="psw" required></td>
+     <td><label for="psw"><b>Passwort</b></label></td>
+   <td> <input v-model="password" type="password" placeholder="Bitte Passwort eingeben" name="psw" required></td>
     </tr>
     <tr>
       <td></td>

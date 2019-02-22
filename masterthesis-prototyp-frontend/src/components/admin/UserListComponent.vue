@@ -1,6 +1,6 @@
 <template>
 <div>
-<h3>Meine Dateien</h3>
+<h3>Benutzerliste des Systems</h3>
 <table align="center">
     <tr>
         <td>ID</td><td>Email</td><td>Name</td><td>Adminstatus</td><td>Aktion</td>
